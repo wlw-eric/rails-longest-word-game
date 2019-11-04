@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-color: #FEFEFEFE;
+}
+
+h1, h4, p {
+
+font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+  display: flex;
+}
+
+.grid p {
+  background-color: green;
+  border: 0.5 solid;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+
+

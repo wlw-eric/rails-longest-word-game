@@ -1,0 +1,22 @@
+<!-- <h1>Games#new</h1>
+<p>Find me in app/views/games/new.html.erb</p> -->
+
+<h1>Nouveau jeu !</h1>
+<!-- p>Find me in app/views/questions/ask.html.erb</p> -->
+<br>
+
+<div class="grid">
+   <% @letters.each do |letter|%>
+  <p>
+    <%= letter.capitalize %>
+    <% end %>
+  </p>
+</div>
+
+<!-- # formulaire -->
+<h4>What is the longest word you can find ?</h4>
+  <form action="/score" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input type="text" name="game" placeholder="Write your word here">
+    <button type="submit" value="play" class="btn btn-primary">Play</button>
+  </form>
